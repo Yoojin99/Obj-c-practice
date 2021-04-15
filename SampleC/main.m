@@ -7,49 +7,33 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Fraction : NSObject
 
--(void) print;
--(void) setNumerator: (int) n;
--(void) setDenominator: (int) d;
-
-@end
-
-@implementation Fraction {
-    int numerator;
-    int denominator;
+void exchange (int *pint1, int *pint2) {
+    int temp;
+    
+    temp = *pint1;
+    *pint1 = *pint2;
+    *pint2 = temp;
 }
 
--(void) print
-{
-    NSLog(@"%i/%i", numerator, denominator);
-}
+void (^exchange2)(int*, int*) = ^(int *pint1, int *pint2) {
+    int temp;
+    
+    temp = *pint1;
+    *pint1 = *pint2;
+    *pint2 = temp;
+};
 
--(void) setNumerator:(int)n
-{
-    numerator = n;
-}
-
--(void) setDenominator:(int)d
-{
-    denominator = d;
-}
-
-@end
-
-int main(int argc, const char * argv[]) {
+int main(int argc, char *argv[]) {
     @autoreleasepool {
-        // insert code here...
-        Fraction *myFraction;
+//        void exchange(int *pint1, int *pint2);
         
-        myFraction = [Fraction alloc];
-        myFraction = [myFraction init];
+        int i1=-5, i2=66, *p1=&i1, *p2=&i2;
         
-        [myFraction setNumerator:1];
-        [myFraction setDenominator:3];
+        exchange2(p1, p2);
+        NSLog(@"%i %i", *p1, *p2);
         
-        NSLog(@"The value of myFraction is : ");
-        [myFraction print];
+        
     }
     return 0;
 }

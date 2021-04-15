@@ -10,6 +10,7 @@
 		F17473AC26141BE2006526F2 /* Ch3.m in Sources */ = {isa = PBXBuildFile; fileRef = F17473AB26141BE2006526F2 /* Ch3.m */; };
 		F17473AF261431F6006526F2 /* Ch3_test.m in Sources */ = {isa = PBXBuildFile; fileRef = F17473AE261431F6006526F2 /* Ch3_test.m */; };
 		F17473DD2616DF37006526F2 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = F17473DC2616DF37006526F2 /* Calculator.m */; };
+		F17473EB26197DD5006526F2 /* Ch7.m in Sources */ = {isa = PBXBuildFile; fileRef = F17473EA26197DD5006526F2 /* Ch7.m */; };
 		F1C1115C2612C4CA00617655 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C1115B2612C4CA00617655 /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,8 @@
 		F17473AB26141BE2006526F2 /* Ch3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ch3.m; sourceTree = "<group>"; };
 		F17473AE261431F6006526F2 /* Ch3_test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ch3_test.m; sourceTree = "<group>"; };
 		F17473DC2616DF37006526F2 /* Calculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
+		F17473DF2616E214006526F2 /* Fraction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fraction.h; sourceTree = "<group>"; };
+		F17473EA26197DD5006526F2 /* Ch7.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ch7.m; sourceTree = "<group>"; };
 		F1C111582612C4CA00617655 /* SampleC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SampleC; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1C1115B2612C4CA00617655 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +70,8 @@
 				F17473AB26141BE2006526F2 /* Ch3.m */,
 				F17473AE261431F6006526F2 /* Ch3_test.m */,
 				F17473DC2616DF37006526F2 /* Calculator.m */,
+				F17473DF2616E214006526F2 /* Fraction.h */,
+				F17473EA26197DD5006526F2 /* Ch7.m */,
 			);
 			path = SampleC;
 			sourceTree = "<group>";
@@ -127,6 +132,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F17473EB26197DD5006526F2 /* Ch7.m in Sources */,
 				F17473AF261431F6006526F2 /* Ch3_test.m in Sources */,
 				F17473DD2616DF37006526F2 /* Calculator.m in Sources */,
 				F17473AC26141BE2006526F2 /* Ch3.m in Sources */,
